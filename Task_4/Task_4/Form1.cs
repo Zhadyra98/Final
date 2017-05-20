@@ -23,18 +23,13 @@ namespace Task_4
             g = Graphics.FromImage(bmp);
             pictureBox1.Image = bmp;
         }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
         int x, x1;
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             x = e.Location.Y;
             x1 = e.Location.X;
             
-            /*g.DrawEllipse(new Pen(Color.Red), e.Location.X, e.Location.Y, 40, 40);*/
+           g.FillEllipse(Brushes.Red, e.Location.X, e.Location.Y, 40, 40);
             
             //move(e.Location.X);
             
@@ -46,7 +41,8 @@ namespace Task_4
         private void timer1_Tick(object sender, EventArgs e)
         {
             x = x + 10;
-            g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
+
+            //g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
   
         }
     }
