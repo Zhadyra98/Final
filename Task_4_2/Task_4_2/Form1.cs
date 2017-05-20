@@ -12,9 +12,7 @@ namespace Task_4_2
 {
     public partial class Form1 : Form
     {
-        Graphics g;
-        Bitmap bmp;
-        int y;
+
         public Form1()
         {
             InitializeComponent();
@@ -25,17 +23,26 @@ namespace Task_4_2
             
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            y = 200;
-            e.Graphics.FillEllipse(Brushes.Red, 200, y, 40, 40);
-            timer1.Start();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            y += 50;
-            e.Graphics.FillEllipse(Brushes.Red, 200, y, 40, 40);
+            int x = 1;
+            int y = 1;
+            for(int i=1; i<=3; i++)
+            {
+                for(int j=1; j<=3; j++)
+                {
+                    
+                    Button btn = new Button();
+                    btn.Size = new Size(40, 40);
+                    btn.Text = "0";
+                    btn.Location=new Point(x,y);
+                    x = x  + 40;
+                    
+                    Controls.Add(btn);
+                }
+                y = y + 40;
+                x = 1;
+            }
         }
     }
 }
