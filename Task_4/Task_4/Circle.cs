@@ -11,10 +11,6 @@ namespace Task_4
     public class Circle
     {
         Pen p;
-        GraphicsPath path_Circle;
-        public Circle(int x, int y)
-        {
-            path_Circle.AddEllipse(x, y, 40, 40);
-        }
+
     }
 }

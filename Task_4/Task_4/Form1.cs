@@ -42,15 +42,11 @@ namespace Task_4
             
             pictureBox1.Refresh();
         }
-        public void move(int x)
-        {
-            g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
-        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             x = x + 10;
             g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
-
   
         }
     }

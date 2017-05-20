@@ -17,9 +17,10 @@ namespace Task_1
             foreach(FileInfo f in files)
             {
                 StreamReader sr = new StreamReader(f.FullName);
-                string k = sr.ReadLine();
-                string[] k1 = k.Split();
                 int count = 0;
+                /*string k = sr.ReadLine();
+                string[] k1 = k.Split();
+                
                 int a = int.Parse(k1[0]);
                 int b = int.Parse(k1[1]);
 
@@ -30,17 +31,17 @@ namespace Task_1
                     {
                         count++;
                     }
-                }
+                }*/
 
-               Console.WriteLine(f.Name);
+                Console.Write(f.Name +" ");
                 if (count == 1)
                 {
-                    Console.Write("yes");
+                    Console.WriteLine("yes");
 
                 }
                 else
                 {
-                    Console.Write("no");
+                    Console.WriteLine("no");
                 }
                 
                 sr.Close();
