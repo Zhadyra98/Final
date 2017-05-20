@@ -21,10 +21,19 @@ namespace Task_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            count += 1;
-            if (count / count == 1)
+
+            if (button1.BackColor==Color.Red)
             {
                 button1.BackColor = Color.Yellow;
+                
+            }
+            else if (button1.BackColor == Color.Yellow)
+            {
+                button1.BackColor = Color.Blue;
+            }
+            else if (button1.BackColor == Color.Blue)
+            {
+                button1.BackColor = Color.Red;
             }
         }
     }
