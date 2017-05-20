@@ -4,3 +4,6 @@ C:\Users\user\final_2017\Task_1\Task_1\bin\Debug\Task_1.pdb
 C:\Users\user\final_2017\Task_1\Task_1\obj\Debug\Task_1.csprojResolveAssemblyReference.cache
 C:\Users\user\final_2017\Task_1\Task_1\obj\Debug\Task_1.exe
 C:\Users\user\final_2017\Task_1\Task_1\obj\Debug\Task_1.pdb
+C:\Users\user\Final\Task_1\Task_1\bin\Debug\Task_1.exe.config
+C:\Users\user\Final\Task_1\Task_1\obj\Debug\Task_1.exe
+C:\Users\user\Final\Task_1\Task_1\obj\Debug\Task_1.pdb
