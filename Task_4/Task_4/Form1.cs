@@ -32,8 +32,15 @@ namespace Task_4
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             g.DrawEllipse(new Pen(Color.Red), e.Location.X, e.Location.Y, 40, 40);
-
             pictureBox1.Refresh();
+        }
+        public void move(int x)
+        {
+
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
