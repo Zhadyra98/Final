@@ -28,23 +28,30 @@ namespace Task_4
         {
             
         }
-
+        int x, x1;
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            g.DrawEllipse(new Pen(Color.Red), e.Location.X, e.Location.Y, 40, 40);
-            //Circle c = new Circle();
-            //c.draw(e.Location.X, e.Location.Y);
-
-
+            x = e.Location.Y;
+            x1 = e.Location.X;
+            
+            /*g.DrawEllipse(new Pen(Color.Red), e.Location.X, e.Location.Y, 40, 40);*/
+            
+            //move(e.Location.X);
+            
+            // c = new Circle(e.Location.X, e.Location.Y);
+            
             pictureBox1.Refresh();
         }
         public void move(int x)
         {
-
+            g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
+            x = x + 10;
+            g.DrawEllipse(new Pen(Color.Red), x1, x, 40, 40);
 
+  
         }
     }
 }
